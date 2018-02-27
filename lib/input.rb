@@ -1,5 +1,5 @@
 class Input
-  POSOTIONS = {
+  POSITIONS = {
     '0' => {x: 0, y: 0},
     '1' => {x: 0, y: 1},
     '2' => {x: 0, y: 2},
@@ -16,13 +16,13 @@ class Input
   end
 
   def valid?
-    POSOTIONS.keys.include?(@value)
+    POSITIONS.keys.include?(@value)
   rescue => e
     puts "Somenthing went wrong #{e}"
     false
   end
 
   def positions
-    POSOTIONS[@value]
+    POSITIONS[@value]
   end
 end

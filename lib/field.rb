@@ -33,7 +33,7 @@ class Field
     end
   end
 
-  def can_fill_position?(value, x:, y:)
+  def can_fill_position?(x:, y:)
     @field[x][y] == '*'
   end
 

@@ -34,7 +34,7 @@ class Game
   def do_step(step_sign)
     input = Input.new(gets.chomp)
 
-    if input.valid? && @field.can_fill_position?(step_sign, input.positions)
+    if input.valid? && @field.can_fill_position?(input.positions)
       @field.fill_position(step_sign, input.positions)
     else
       puts 'Invalid number, please try again'
